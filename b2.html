@@ -7,15 +7,13 @@
 </head>
 <body>
 <script>
-    let array = []
-    let lengthArr = +prompt("Nhập độ dài của mảng: ");
-    for (let i=0;i<lengthArr;i++) {
-        array.push(Math.round(Math.random()*100));
+    let n=+prompt("Nhap chieu dai cua mang");
+    let num=+prompt("Nhap so can kiem tra");
+    let arr=[];
+    for (let i = 0; i <n ; i++) {
+        arr[i]=Math.round(Math.random()*100)
     }
-    let num =+prompt("Nhập số cần tìm: ");
-    let results = checkNumberInArray(num,array);
-    document.write(results);
+    alert(checkNumber(arr,num)+' '+arr);
 </script>
-
 </body>
 </html>

@@ -1,12 +1,12 @@
-function checkNumberInArray(number,arr) {
-    let result;
-    for (let i=0;i<arr.length;i++) {
-        if (arr[i] == number) {
-            result = i;
-            break;
-        } else {
-            result = "Số cần tìm không ở trong mảng"
+function checkNumber(arr,num){
+    let count =0;
+    for (let i = 0; i < arr.length; i++) {
+        if(num==arr[i]){
+            count++;
+            return i;
         }
     }
-    return result;
+    if(count==0) {
+        return false;
+    }
 }

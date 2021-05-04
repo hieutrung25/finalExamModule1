@@ -3,31 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <script src="b3.js"></script>
 </head>
 <body>
 <script>
-    function findElement(x){
-        var arrays = [3, -5, -6, 9, 1];
+    let n=+prompt("Nhap chieu dai cua mang");
+    let arr=[];
+    for (let i = 0; i <n ; i++) {
+        arr[i]=prompt("Nhap cac ky tu")
+    };
 
-        if(typeof x === 'number'){
+    alert(demSoNguyenAmTrongMang(arr));
 
-            var isContain = false;
-            for(let i=0; i<arrays.length ; i++){
-                if(x === arrays[i]){
-                    isContain = true;
-                    console.log("so vua nhap nam trong mang");
-                    break;
-                }
-            }
-            if(!isContain){
-                console.log("so vua nhap khong nam trong mang");
-            }
-        }else{
-            console.log("please input number");
-        }
-    }
-    findElement(-1);
+
 </script>
-
 </body>
 </html>
