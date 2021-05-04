@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function findElement(x){
+        var arrays = [3, -5, -6, 9, 1];
+
+        if(typeof x === 'number'){
+
+            var isContain = false;
+            for(let i=0; i<arrays.length ; i++){
+                if(x === arrays[i]){
+                    isContain = true;
+                    console.log("so vua nhap nam trong mang");
+                    break;
+                }
+            }
+            if(!isContain){
+                console.log("so vua nhap khong nam trong mang");
+            }
+        }else{
+            console.log("please input number");
+        }
+    }
+    findElement(-1);
+</script>
+
+</body>
+</html>

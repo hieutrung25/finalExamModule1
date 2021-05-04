@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Giải phương trình bậc 1</title>
+    <meta charset="utf-8">
+<body>
+
+<h3>giải phương trình A*x+B=0</h3>
+
+<button onclick="inputA()" style="color: red ">Nhập Giá Trị A</button>
+<button onclick="inputB()" style="color: red">Nhập Giá Trị B</button>
+<button onclick="outputkq()"style=" color: red">in kết quả</button>
+
+
+
+
+    <script>
+        var a
+        var b
+        function inputA()  {
+            a = prompt('Nhập giá trị của a');
+        }
+        function inputB()  {
+            b = prompt('Nhập giá trị của b');
+        }
+        function outputkq()  {
+
+            if (a == 0) {
+                if (b == 0)
+                {
+                    alert('Phương trình có vô số nghiệm')
+                }
+                else
+                {
+                    alert('Phương trình có vô nghiệm')
+                }
+            }
+            else
+                alert('Phương trình có một nghiệm là x: ' + (-b/a) )
+        }
+    </script>
+</body>
+</head>
+
+</html>
